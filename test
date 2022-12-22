@@ -9,7 +9,7 @@ pipeline{
         stage('deploy'){
             steps{
                 echo "this is deploy stage"
-                sh 'mkdir test'
+                sh 'mkdir test12'
                 sh '''cd test
                     touch t1 t2 t3 t4'''
             }
