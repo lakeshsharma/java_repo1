@@ -14,5 +14,19 @@ pipeline{
                     touch t1 t2 t3 t4'''
             }
         }
+        stage('deploy2'){
+            parallel{
+                stage('deploy2A'){
+                    steps{
+                        echo "this is depoly 2A"
+                        }
+                        }
+                stage('deploy2B'){
+                    steps{
+                        echo "this is deploy 2B"
+                        }
+                        }
+                        }
+                        }
     }
 }
