@@ -5,9 +5,12 @@ pipeline{
             steps{
                 echo "this is checkout stage"
             }
-        stage('checkout'){
+        stage('deploy'){
             steps{
-                echo "this is checkout stage"
+                echo "this is deploy stage"
+                sh 'mkdir test'
+                sh '''cd test
+                    touch t1 t2 t3 t4'''
             }
         }
         }
