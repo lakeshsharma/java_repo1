@@ -5,6 +5,11 @@ pipeline{
             steps{
                 echo "this is checkout stage"
             }
+        stage('checkout'){
+            steps{
+                echo "this is checkout stage"
+            }
+        }
         }
     }
 }
