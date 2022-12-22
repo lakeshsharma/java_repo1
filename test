@@ -5,6 +5,7 @@ pipeline{
             steps{
                 echo "this is checkout stage"
             }
+        }
         stage('deploy'){
             steps{
                 echo "this is deploy stage"
@@ -12,7 +13,6 @@ pipeline{
                 sh '''cd test
                     touch t1 t2 t3 t4'''
             }
-        }
         }
     }
 }
